@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<!----------------------------------------------------------------------------------------------->
+
+<div class="MainHeader">
+<div class="MainContainer">
+
+    <div class="HeadLink"><a href="index.html">SUPER STORE</a></div>
+    <div class="NavBarMain">
+	</div>
+
+	
+	</div>
+	</div>
+
+<!----------------------------------------------------------------------------------------------->
+
+<div class="tab">
+<h2>&#9778; Menu Bar</h2>
+    <button class="tablinks" onclick="openInfo(event, 'Client')" id="defaultOpen">&#8620; Client</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">&#8620;  Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">&#8620; Cart</button>
+</div>
+
+	
+	
+	
+<!----------------------------------------------------------------------------------------------->
+
+  <div id="Client" class="tabcontent">
+    <h2>CLIENT INFORMATION</h2>
+    <p>Tell us a bit about you.</p>
+    <span class="Heading">Choose a Category:</span><br><br>
+    <!---<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+      <option value=""></option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="GlutenFree">GlutenFree</option>
+      <option value="Lactose Intolerance">Lactose Intolerance</option>
+      <option value="Nut Allergy">Nut Allergy</option>
+      <option value="None">None</option>
+    </select>--->
+	
+  <input type="radio" id="vegetarian" name="mainoptions" value="vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="vegetarian">Vegetarian</label><br>
+  <input type="radio" id="glutenfree" name="mainoptions" value="glutenfree" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="glutenfree">GlutenFree</label><br>
+  <input type="radio" id="wheatallery" name="mainoptions" value="wheatallery" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="wheatallery">Wheat Allery</label><br>
+  <input type="radio" id="lactoseintolerant" name="mainoptions" value="lactoseintolerant" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="lactoseintolerant">Lactose Intolerance</label><br>
+  <input type="radio" id="nutallergy" name="mainoptions" value="nutallergy" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="nutallergy">Nut Allergy</label><br>
+  <input type="radio" id="eggallergy" name="mainoptions" value="eggallergy" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="eggallergy">Egg Allergy</label><br>
+  <input type="radio" id="none" name="mainoptions" value="none" onchange="populateListProductChoices(this.id, 'displayProduct')">
+  <label for="none">None</label>
+  <!---------------
+  <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+      <option value=""></option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="GlutenFree">GlutenFree</option>
+      <option value="Lactose Intolerance">Lactose Intolerance</option>
+      <option value="Nut Allergy">Nut Allergy</option>
+      <option value="None">None</option>
+    </select>
+	
+	-------->
+  </div>
+  
+  
+<!----------------------------------------------------------------------------------------------->
+
+  <div id="Products" class="tabcontent">
+        <h3>YOUR TARGETED PRODUCTS</h3><br>
+    <p>We preselected products based on your restrictions.</p><br>
+  <p class="choose">  Choose items to buy:</p>
+    <div id="displayProduct"></div>
+    <button id="addCart" type="button" class="block" onclick="selectedItems()">
+      Add selected items to cart.
+    </button>
+  </div>
+
+  <div id="Cart" class="tabcontent">
+    <h2>CART</h2>
+    <p>Here is your cart.</p>
+    <div id="displayCart"></div>
+  </div>
+
+	
+	
+<footer>
+  Website designed by Jathushan Karthigesar
+</footer>
+  <script src="scripts/groceries.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+
+</html>

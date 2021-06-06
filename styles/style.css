@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Poppins-Black;
+  src: url(fonts/Poppins-Black.ttf);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(fonts/Poppins-Medium.ttf);
+}
+
+
+html {
+width:100%;
+height: 100%;
+margin:0px;
+padding:0;
+margin-top:-5px;
+}
+
+body {
+margin:0;
+padding:0;
+height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/*-----------------------------------*/
+
+
+.MainHeader{
+	font-family: Poppins-Medium;
+	width: 100%;
+	margin: 0px;
+    background-color: #333333;
+	padding: 5px 0px;
+}
+
+.MainHeader .MainContainer{
+	width: 90%;
+	margin: auto;
+}
+
+.MainHeader a{
+	color: #FFFFFF;
+}
+
+.MainHeader .HeadLink{
+	font-size: 45px;
+}
+
+/*-----------------------------------*/
+
+.tab {
+	font-family: Poppins-Medium;
+  float: left;
+  border: 1px solid #01425B;
+  background-color: #01425B;
+  width: 30%;
+  min-height: 550px;
+  color: #F7A801;
+}
+
+.tab h2{
+  background-color: #F7A801;
+  color: #01425B;
+  padding: 22px 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.tab button{
+  font-family: Poppins-Medium;
+  display: block;
+  background-color: inherit;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #F7A801;
+	border-bottom: #F7A801 1px solid;
+}
+
+.tab button:hover {
+  background-color: #FFFFFF;
+}
+
+.tab button.active {
+  background-color: #FFFFFF;
+}
+
+/*--------------------------------*/
+
+.tabcontent {
+  font-family: Poppins-Medium;
+  float: left;
+  padding: 20px 22px;
+  box-shadow: 5px 5px 5px 5px #EEEEEE;
+  width: 65%;
+  border-left: none;
+  min-height: 500px;
+}
+
+.tabcontent .Heading{
+  background-color: #01425B;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.tabcontent img{
+  width:5%;
+  border-radius: 5px;
+	margin-top: 10px;
+}
+
+
+.tabcontent .PriceArea{
+  background-color: #F7A801;
+	padding: 5px 10px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.tabcontent button{
+  font-family: Poppins-Medium;
+  background-color: #01425B;
+  color: #F7A801;
+	font-size: 16px;
+	height: 50px;
+	border: none;
+	width: 30%;
+	transition: 1s ease all;
+	margin-bottom: 50px;
+}
+
+.tabcontent button:hover {
+  background-color: #F7A801;
+  color: #01425B;
+}
+
+
+/*--------------------------------*/
+
+footer{
+  font-family: Poppins-Regular;
+	background-color: #000000;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
